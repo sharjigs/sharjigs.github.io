@@ -11,7 +11,7 @@ function setup() {
 }
 
 function preload() { 
-  img = loadImage('https://media.geeksforgeeks.org/wp-content/uploads/20190314004249/sample-image.png'); 
+  img = loadImage('sample-image.png'); 
 } 
 
 function gotPoses(poses) {
@@ -28,7 +28,7 @@ function modelLoaded() {
 function draw() {
 	image(video, 0, 0);
 	if(pose) {
-	preload();
+	fill(255, 0, 0);
 	ellipse(pose.nose.x, pose.nose.y, 64);
 	}
 }
