@@ -10,6 +10,9 @@ function setup() {
 	poseNet.on('pose', gotPoses);
 }
 
+function preload() { 
+  img = loadImage('sample-image.png'); 
+} 
 
 function gotPoses(poses) {
 	console.log(poses);
@@ -25,7 +28,7 @@ function modelLoaded() {
 function draw() {
 	image(video, 0, 0);
 	if(pose) {
-	fill(255, 0, 0);
+	preload();
 	ellipse(pose.nose.x, pose.nose.y, 64);
 	}
 }
