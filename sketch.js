@@ -11,7 +11,7 @@ function setup() {
 }
 
 function preload() { 
-  img = loadImage('sample-image.png'); 
+  img = loadImage('https://media.geeksforgeeks.org/wp-content/uploads/20190314004249/sample-image.png'); 
 } 
 
 function gotPoses(poses) {
